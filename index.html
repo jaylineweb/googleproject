@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google page : 메인 페이지</title>
+    <link rel="stylesheet" href="./css/googlestyle.css">
+    <!-- font-awesome 사용시 사용되는 cdn개념의 스크립트 : fontawesome 사이트에서 별도로 부여받는 링크-->
+    <script src="https://kit.fontawesome.com/250db844ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 구글 홈페이지 틀코딩 -->
+    <div>
+        <!-- 머리 -->
+        <a href="#n">Gmail</a>
+        <a href="#n">이미지</a>
+        <i class="fa-solid fa-bars"></i>
+        <!--
+            class: css를 표현할 때 사용되는 '선택자'
+            i.fa-solid, i.fa-bars,.fa-solid,.fa-bars
+
+            CDN : Content Delivery Network
+            아이콘 그리기 귀찮을 시 fontawesome 링크 사용
+        -->
+    </div>
+    <div>
+        <!-- 몸통 -->
+        <img src="./images/google-210916-155837.png" width="272" alt="google logo 이미지" style="font-size:0;">
+        <div>
+            <!-- 기능 고려하여 button추가 -->
+            <label for="search">
+                <span>
+                    <!-- search icon -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <!-- input -->
+                <input type="text" id="search">
+            </label>
+            <!-- microphone icon -->
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+        <div>
+            <!-- 버튼 -->
+            <button type="button">Google 검색</button>
+            <button type="button">I'm Feeling Lucky</button>
+        </div>
+
+        <div>
+            Google offered in
+            <!-- 언어벌 분류 -->
+            <a href="#n" title="한국어">한국어</a>
+            <a href="#n" title="Tiếng Việt">Tiếng Việt</a>
+            <a href="#n" title="Français">Français</a>
+            <a href="#n" title="中文">中文</a>
+        </div>
+    </div>
+    <div>
+        <!-- 다리 -->
+        <!-- div, span을 사용시
+            div : 기본적으로 block의 성질을 지니고 있어 한줄을 전부 차지하는 성격
+            span : 기본적으로 inline의 성질을 지니고 있어 텍스트가 입력된 크기만큼만 크기를 차지하여 한줄로 나열할 때 span태그를 많이 사용한다.
+        -->
+        <div>
+            Vietnam
+        </div>
+        <div>
+            <span>
+                <a href="#n">About</a>
+                <a href="#n">Advertising</a>
+                <a href="#n">Business</a>
+                <a href="#n">How search works</a>
+
+            </span>
+            <span>
+                <a href="#n">Privacy</a>
+                <a href="#n">Term</a>
+                <a href="#n">Settings</a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
