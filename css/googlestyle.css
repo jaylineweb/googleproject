@@ -1,2 +1,65 @@
 @charset "UTF-8";
 
+body{display:contents;}
+
+/* 전체 margin,padding 초기화 */
+*{margin:0;padding:0;}
+
+/* 우측으로 이동 */
+.navbar{float:right;margin:20px;}
+
+/* 밑줄 제거 */
+.nav-item{margin-right:15px;color:#000000;text-decoration:none;}
+
+/* 마우스 호버 이벤트 : 마우스를 올렸을 때 밑줄 나타나게 만들기 */
+.nav-item:hover{text-decoration:underline;}
+
+
+/* 가운데 영역  */
+.main{margin-top:300px;text-align:center;}
+
+.input-area{margin-top:20px;}
+.input-box{width:584px;height:46px;padding:0 40px;border-radius:24px;border:1px solid #dfe1e5;}
+.input-box:hover{border-color:transparent;background:#fff;box-shadow:0 1px 6px rgba(32, 33, 36, .28);}
+
+/*
+* icon 색 & 위치 조정
+* 돋보기 아이콘 및 마이크 아이콘의 영역을 최대한 유사하게 위치 조정 : top
+*/
+[class*="icon"]{position:relative;top:2px;color:#9aa0a6;}
+.search-icon{left:40px;}
+.mic-icon{right:40px;}
+
+/* 버튼 영역
+* Google 검색
+* I'm Feeling Lucky
+*/
+.button-area{display:flex;justify-content:center;align-items:center;padding-top:18px;}.button-area:after{display:block;content:'';clear:both;}
+.button-area .button-style{display:inline-block;float:left;height:36px;padding:0 16px;border:1px solid #f8f9fa;background-color:#f8f9fa;font-family: 'Apple SD Gothic Neo',arial,sans-serif;}
+.button-area .button-style + button{margin-left:8px;}
+.button-area button:hover{box-shadow:0 1px 1px rgba(0, 0, 0, .1);background-color:#f8f9fa;border:1px solid #dadce0;color:#202124;}
+
+.button-area + div{margin-top:15px;font-size:14px;}
+.button-area + div a{padding:10px;color:#6f6f99;text-decoration:none;}
+.button-area + div a:hover{color:#1c1c1c;text-decoration:underline;}
+
+/*
+* position:absolute를 사용하게 되면 컨텐츠(텍스트)가 차지하는 양만큼만 크기가 나타나게 된다. 이때 width:100%를 주면 보통 때 사용하던 div만큼 너비가 확장되는 걸 볼 수 있다.
+* absolute를 사용한 최상단 부모 == body
+*/
+
+/* 하단 영역 */
+.footer{position:absolute;bottom:0;width:100%;background-color:#f2f2f2;}
+
+[class*="-line"]{padding:15px 30px;font-size:15px;color:rgba(0,0,0,.54);}
+[class*="-line"] a{padding:0 15px;color:#0000008a;text-decoration:none;}
+[class*="-line"] a:first-child{padding-left:0;}
+[class*="-line"] a:hover{color:#202124;text-decoration:underline;}
+
+.first-line{border-bottom:1px solid #dadce0;}
+
+/* .second-line span:nth-child(1) a{} */
+/* .second-line span:nth-child(1) a:hover{} */
+
+.second-line{position: relative;color:#0000008a;}
+.second-line-second{float:right;margin-top:-15px;}
